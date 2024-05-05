@@ -8,9 +8,9 @@
 <style>
   :root {
     --border-radius: 1rem;
-    --color-background: #111;
-    --color-text-subtle: #888;
-    --color-text: #eee;
+    --color-background: #222222;
+    --color-text-subtle: #C8C8C8;
+    --color-text: #EFF0F1;
     --font-family: -apple-system, Helvetica, sans-serif;
     --font-size: clamp(16px, 1.6vw, 18px);
     --font-weight-bold: 700;
@@ -21,9 +21,9 @@
 
   @media (prefers-color-scheme: light) {
     :root {
-      --color-background: #e8e8e8;
-      --color-text-subtle: #606060;
-      --color-text: #111;
+      --color-background: #222222;
+      --color-text-subtle: #C8C8C8;
+      --color-text: #EFF0F1;
     }
   }
 </style>
@@ -38,9 +38,9 @@
   };
 
   const COMMANDS = new Map([
-    ['a', { name: 'Chat', url: 'https://chat.openai.com' }],
-    ['b', { name: 'Dribbble', url: 'https://dribbble.com/shots/recent' }],
-    ['c', { name: 'Calendar', url: 'https://calendar.google.com' }],
+    ['a', { name: 'ChatGPT', url: 'https://chat.openai.com' }],
+    ['b', { name: 'BigCartel', url: 'https://my.bigcartel.com' }],
+    ['c', { name: 'ChiefDelphi', url: 'https://chiefdelphi.com' }],
     [
       'd',
       {
@@ -50,7 +50,9 @@
     ],
     ['f', { name: 'Figma', url: 'https://www.figma.com' }],
     ['g', { name: 'GitHub', url: 'https://github.com' }],
+    ['j', { name: 'Jrua', url: 'https://jrua.me' }],
     ['k', { name: 'Keep', url: 'https://keep.google.com' }],
+    ['m', { name: 'Gmail', url: 'https://mail.google.com/mail/u/0/#inbox' }],
     ['n', { name: 'Notion', url: 'https://www.notion.so' }],
     [
       'p',
@@ -73,21 +75,8 @@
         url: 'https://reddit.com',
       },
     ],
-    ['s', { name: 'Supabase', url: 'https://supabase.com/dashboard/projects' }],
-    ['t', { name: 'Translate', url: 'https://www.deepl.com/translator' }],
-    ['v', { name: 'Vercel', url: 'https://vercel.com/dashboard' }],
-    [
-      'x',
-      {
-        name: 'xvvvyz',
-        suggestions: [
-          'jelly.xvvvyz.xyz',
-          'torrent.xvvvyz.xyz',
-          'proxy.xvvvyz.xyz',
-        ],
-        url: 'https://pomodoro.xvvvyz.xyz',
-      },
-    ],
+    ['s', { name: 'Schoology', url: 'https://misd.schoology.com' }],
+    ['t', { name: 'TheBlueAlliance', url: 'https://thebluealliance.com' }],
     [
       'y',
       {
@@ -96,15 +85,7 @@
         url: 'https://youtube.com/feed/subscriptions',
       },
     ],
-    [
-      '0',
-      {
-        name: 'localhost',
-        searchTemplate: ':{}',
-        suggestions: ['0 54323', '0 54324'],
-        url: 'http://localhost:3000',
-      },
-    ],
+    ['z', { name: 'Zoho Mail', url: 'https://mail.zoho.com/zm/#mail/folder/inbox' }],
   ]);
 </script>
 
